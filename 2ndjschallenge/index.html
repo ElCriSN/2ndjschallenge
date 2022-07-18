@@ -14,13 +14,18 @@
     <!-- 2. Erase the border when we click again =P!! -->
     <img src="https://placedog.net/500/500" alt="A cool dog photo hahahahaa =)!!" id="img" onclick="
         img = document.querySelector('#img');
-        if (img){
+        console.log(estado);
+
+        if (estado == true) {
             img.style.border = '2px solid red';
+            estado = false;
         } else {
-            img.style.border = 'white';
+            img.style.border ='none';
+            estado = true;
         }
-        ">
+
+    ">
     <!-- PART ONE READY HAHAAHHA =)!! -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

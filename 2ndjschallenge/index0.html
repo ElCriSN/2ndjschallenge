@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>SECOND JS CHALLENGE ADL PART TWO HAAHAHHAA (PROJECT =P!!)</title>
+</head>
+<body>
+    <h1>Elige máximo 10 Fotos porfa jajajajjaa =)!!</h1>
+    <div class="flex-container">
+        <img src="https://placedog.net/200/100" alt="A cool photo dooog =P!!" id="img">
+        <img src="https://placedog.net/200/101" alt="A cool photo dooog 0 =P!!!" id="img0">
+        <img src="https://placedog.net/200/102" alt="A cool photooo dooog 1 =)!!" id="img1">
+   </div> 
+   <div class="flex-container">
+        <input type="text" id="input">
+        <input type="text" id="input0">
+        <input type="text" id="input1">
+    </div>
+    <p id="par"></p>
+    <button onclick="
+        par = document.querySelector('#par');
+        input = document.querySelector('#input').value;
+        input0 = document.querySelector('#input0').value;
+        input1 = document.querySelector('#input1').value;
+        cantidadTotal = Number(input + input0 + input1);
+
+        if (cantidadTotal <= 10) {
+            par.innerHTML = 'Llevamos ' + cantidadTotal + ' Fotos' ;
+        } else {
+            par.innerHTML = 'Demasiadas Fotos Amigos, por favor, solo eligamos máximo 10 =P!!'
+        }
+    
+    ">Verifiquemoos Amigooos jajajjaa =)!! 😁</button>
+</body>
+</html>

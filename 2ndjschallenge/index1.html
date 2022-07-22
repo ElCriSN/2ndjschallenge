@@ -46,9 +46,10 @@
     select = document.querySelector('#select').value;
     select0 = document.querySelector('#select0').value;
     select1 = document.querySelector('#select1').value;
-    if (select == 9 && select0 == 1 && select1 == 1) {
+    selectSum = select + select0 + select1
+    if (selectSum === '911') {
         par.innerHTML = 'Excelente =DDD!!'
-    } else if (select == 7 && select0 == 1 && select1 == 4) {
+    } else if (selectSum === '714') {
         par.innerHTML = 'Genialll!! aajajaa =DD!';
     } else {
         par.innerHTML = '😁';
